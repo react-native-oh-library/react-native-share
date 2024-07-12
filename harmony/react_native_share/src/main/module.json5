@@ -1,0 +1,7 @@
+{
+  module: {
+    name: 'react_native_share',
+    type: 'har',
+    deviceTypes: ['default'],
+  },
+}
