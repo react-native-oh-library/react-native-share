@@ -8,6 +8,10 @@ export function isAndroid() {
   return 'android' === Platform.OS;
 }
 
+export function isHarmony() {
+  return 'harmony' === Platform.OS as string;
+}
+
 export function getAndroidVersion() {
   const version = Platform.Version;
   return typeof version === 'string' ? parseInt(version, 10) : version;
