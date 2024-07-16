@@ -15,7 +15,7 @@ import {
   ShareSingleOptions,
   ShareSingleResult,
 } from './types';
-import { isAndroid, isIOS } from './helpers/platform';
+import { isAndroid, isIOS ,isHarmony} from './helpers/platform';
 import { normalizeShareOpenOptions, normalizeSingleShareOptions } from './helpers/options';
 
 const RNShare = {
@@ -69,7 +69,7 @@ const RNShare = {
   },
 
   async shareSingle(options: ShareSingleOptions) {
-    if (!isAndroid() && !isIOS()) throw new Error('Not implemented');
+    if (!isAndroid() && !isIOS() && !isHarmony()) throw new Error('Not implemented');
 
     if (options.social === RNShare.Social.INSTAGRAM_STORIES && !options.appId) {
       throw new Error('To share to Instagram Stories you need to provide appId');

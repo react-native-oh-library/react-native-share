@@ -1,0 +1,13 @@
+{
+  "name": "@react-native-oh-tpl/react-native-share",
+  "description": "Social share, sending simple data to other apps.",
+  "version": "10.2.1-0.0.1",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@rnoh/react-native-openharmony": 'file:../react_native_openharmony',
+
+  }
+}
+
+

@@ -1,45 +1,20 @@
-# react-native-share [![react-native-share](https://circleci.com/gh/react-native-share/react-native-share.svg?style=svg)](https://app.circleci.com/pipelines/github/react-native-share/react-native-share) [![npm version](https://badge.fury.io/js/react-native-share.svg)](http://badge.fury.io/js/react-native-share) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+# @react-native-oh-tpl/react-native-share
 
-React Native Share, is a simple tool for sharing messages and files with other apps.
+本项目基于 [react-native-share (原库NPM包名)](https://github.com/react-native-share/react-native-share)
 
-# Getting started 🚀
+## 文档地址 / Documentation URL 
 
----
+[中文 / Chinese](https://gitee.com/react-native-oh-library/usage-docs/blob/master/zh-cn/react-native-share.md)
 
-If you are using `react-native >= 0.7X` and/or the new arch you just need to do a simple:
+[英文 / English](https://gitee.com/react-native-oh-library/usage-docs/blob/master/zh-en/react-native-share.md)
 
-```shell
-yarn add react-native-share
-```
+## Codegen
 
-Or if are using npm:
+该库已接入 codegen，具体请查阅文档。
 
-```shell
-npm i react-native-share --save
-```
+The library has been integrated with codegen. Please refer to the documentation for details.
 
-After that, we need to install the dependencies to use the project on iOS(you can skip this part if you are using this on Android).
+## 请悉知 / Acknowledgements
 
-Now run a simple: `npx pod-install` or `cd ios && pod install`. After that, you should be able to use the library on both Platforms, iOS and Android.
+本项目基于 [The MIT License (MIT)](https://github.com/react-native-share/react-native-share/blob/main/LICENSE) ，请自由地享受和参与开源。
 
-Then simply import:
-
-```js
-import Share from 'react-native-share';
-
-Share.open(options)
-  .then((res) => {
-    console.log(res);
-  })
-  .catch((err) => {
-    err && console.log(err);
-  });
-```
-
-Which you do something similar to this:
-
-![example-ios](website/static/img/assets-docs/ios-readme-example.gif)
-
-# Documentation
-
-If you are using a older version of `react-native` or `react-native-share`, having any problem or want to know how use `Share.open` and other functions, please refer to our new [docs](https://react-native-share.github.io/react-native-share) and help us improve that.🚀
