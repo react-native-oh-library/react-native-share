@@ -1,7 +1,7 @@
 {
   "name": "@react-native-oh-tpl/react-native-share",
   "description": "Social share, sending simple data to other apps.",
-  "version": "10.2.1-0.0.1",
+  "version": "10.2.1-0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/react-native-oh-library/react-native-share.git"
