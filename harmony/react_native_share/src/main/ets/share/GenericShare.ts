@@ -62,21 +62,25 @@ export class GenericShare extends ShareBaseInstance {
           utdType = utd.getUniformDataTypeByMIMEType(type) as utd.UniformDataType;
         }
         let title = options?.title;
-        let description = utdType === utd.UniformDataType.HYPERLINK ? fileUrl : options?.subject;
+        let description = options?.subject;
+        let param:{utd:string,uri?:string,description:string,title:string,content?:string} = {
+          utd: utdType,
+          uri: fileUrl,
+          description: description,
+          title: title
+        }
+        if(utdType === utd.UniformDataType.HYPERLINK){
+          param = {
+            utd: utdType,
+            content: fileUrl,
+            description: description,
+            title: title
+          }
+        }
         if (!data) {
-          data = new systemShare.SharedData({
-            utd: utdType,
-            uri: fileUrl,
-            description: description,
-            title: title,
-          })
+          data = new systemShare.SharedData(param)
         } else {
-          data.addRecord({
-            utd: utdType,
-            uri: fileUrl,
-            description: description,
-            title: title,
-          })
+          data.addRecord(param)
         }
 
       })
