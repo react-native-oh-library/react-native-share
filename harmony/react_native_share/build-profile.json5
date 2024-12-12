@@ -5,5 +5,9 @@
       "name": "default",
       "runtimeOS": "HarmonyOS"
     }
-  ]
+  ],
+  "buildOption": {"arkOptions": {
+    "byteCodeHar": false
+  }
+  }
 }
