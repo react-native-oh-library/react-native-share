@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2024 Huawei Device Co., Ltd. All rights reserved
+ * Use of this source code is governed by a MIT license that can be
+ * found in the LICENSE file.
+ */
+
 import Want from '@ohos.app.ability.Want';
 import common from '@ohos.app.ability.common';
 import wantConstant from '@ohos.app.ability.wantConstant';
@@ -6,7 +12,6 @@ import { ShareBaseInstance } from './ShareBaseInstance';
 import { FileUtils } from '../utils/FileUtils';
 
 export class InstagramStoriesShare extends ShareBaseInstance {
-
   constructor() {
     super("com.instagram.android", 'instagram-stories://', '123');
   }

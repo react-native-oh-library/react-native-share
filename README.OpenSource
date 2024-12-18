@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-share",
+        "License": "MIT License",
+        "License File": "https://github.com/react-native-share/react-native-share/blob/main/LICENSE",
+        "Version Number": "10.2.1",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/react-native-share/react-native-share",
+        "Description": "Social share, sending simple data to other apps"
+    }
+]
