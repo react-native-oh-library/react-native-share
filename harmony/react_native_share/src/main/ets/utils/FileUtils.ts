@@ -91,7 +91,7 @@ export class FileUtils {
     if (this.isBase64File(url)) {
       let data = url.split(',');
       let typeStr = data[0].match(/:(.*?);/)[1];
-      suffix = '.' + typeStr.substring(typeStr.lastIndexOf("/") + 1);
+      suffix = this.getTypeFromMIMEType(typeStr) || ('.' + typeStr.substring(typeStr.lastIndexOf("/") + 1));
     } else {
       suffix = url.substring(url.lastIndexOf("."));
       let fileMIMEType = FileUtils.mimeTypes?.[suffix.toLowerCase()]
